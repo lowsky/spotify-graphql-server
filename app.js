@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var expressGraphQL = require('express-graphql');
+var schema = require('./data/schema').default;
+
 var app = express();
 
 // view engine setup
@@ -30,6 +33,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+
+// API middleware
+
+app.use('/graphql', expressGraphQL(req => ({
+    schema,
+    graphiql: true,
+    pretty: process.env.NODE_ENV !== 'production',
+})));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
