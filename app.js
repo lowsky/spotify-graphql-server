@@ -40,7 +40,7 @@ app.use('/graphql', expressGraphQL(req => ({
     schema,
     graphiql: true,
     rootValue: {
-        hi: () => 'Hello world!'
+        hi: (args) => args.message
     },
     pretty: process.env.NODE_ENV !== 'production',
 })));
