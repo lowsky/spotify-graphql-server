@@ -39,6 +39,9 @@ app.use('/users', users);
 app.use('/graphql', expressGraphQL(req => ({
     schema,
     graphiql: true,
+    rootValue: {
+        hi: () => 'Hello world!'
+    },
     pretty: process.env.NODE_ENV !== 'production',
 })));
 

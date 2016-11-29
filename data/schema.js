@@ -1,33 +1,14 @@
 import {
-    GraphQLSchema,
-    GraphQLObjectType as ObjectType,
-    GraphQLNonNull as NonNull,
-    GraphQLString as StringType,
+    buildSchema
 } from 'graphql';
 
-const echo = {
-    type: StringType,
-    description: 'Just a simple echo.',
-    args: {
-        message: {
-            type: new NonNull(StringType)
-        }
-    },
-    resolve: (root, args) => {
-        return args.message;
-    }
-};
+const schema = buildSchema(`
+# The root of all queries:
 
-const QueryType = new ObjectType({
-    name: 'Query',
-    description: 'Root of all evals. :)',
-    fields: {
-        echo: echo,
-    },
-});
-
-const schema = new GraphQLSchema({
-    query: QueryType,
-});
+type Query {
+  # Just returns "Hello world!"
+  hi(message: String = "Hi"): String
+}
+`);
 
 export default schema;
