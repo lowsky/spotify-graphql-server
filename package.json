@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "printSchema": "babel-node ./bin/printSchema",
     "start": "babel-node ./bin/www"
   },
   "dependencies": {
