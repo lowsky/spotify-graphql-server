@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "simpletest": "babel-node ./test/schemaTest",
     "printSchema": "babel-node ./bin/printSchema",
     "start": "babel-node ./bin/www"
   },
@@ -19,6 +20,7 @@
     "express": "~4.13.4",
     "express-graphql": "0.5.4",
     "graphql": "0.7.0",
+    "graphql-tools": "0.7.2",
     "morgan": "~1.7.0",
     "node-sass-middleware": "0.8.0",
     "serve-favicon": "~2.3.0"
