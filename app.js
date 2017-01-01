@@ -10,6 +10,7 @@ var users = require('./routes/users');
 
 var expressGraphQL = require('express-graphql');
 var schema = require('./data/schema').default;
+import {fetchArtistsByName} from './data/resolvers'
 
 var app = express();
 
@@ -36,12 +37,14 @@ app.use('/users', users);
 
 // API middleware
 
+const rootValue = {
+    queryArtists: ({ byName }) => fetchArtistsByName(byName)
+};
+
 app.use('/graphql', expressGraphQL(req => ({
     schema,
     graphiql: true,
-    rootValue: {
-        hi: (args) => args.message
-    },
+    rootValue,
     pretty: process.env.NODE_ENV !== 'production',
 })));
 
