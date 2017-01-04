@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %> (work-in-progress!)</h1>
+
+<h3>Try these predefined queries in graphiql playground:</h3>
+
+<p>Start a query for
+<a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
+for <b>artists</b> with a name containing <b>Red Hot Chili</b></a>
+in the graphiql playground.</p>
+
+<p>Start a query for
+    <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
+         artists and their albums and their tracks.</a> in the playground.</p>
+
+<p>Open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty graphiql</a> playground.</p>
+
+<p><i>Please do not mind, that there is a "natural" limit set by spotify, so the query results may be not "complete".</i></p>
+
+<hr/>
+Find details in this <a href="https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server">blog post</a> and find the sources on
+<a href="https://github.com/lowsky/spotify-graphql-server">github</a>.
+<p> Version: <%= version %> </p>
+</body>
 </html>
