@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "npm run simpletest",
     "simpletest": "babel-node ./test/schemaTest",
     "printSchema": "babel-node ./bin/printSchema",
     "start": "babel-node ./serverInit"
