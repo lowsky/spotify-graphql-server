@@ -16,7 +16,18 @@ export const fetchArtistsByName = (name) => {
 };
 
 export const fetchAlbumsOfArtist = (artistId, limit) => {
-    return [{ name: 'to-be-implemented' }]; // TODO
+    console.log(`debug: query albums of artist ${artistId} `);
+
+    return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            return data.items || [];
+        })
+        .then((albumData) => {
+            return albumData.map(albumRaw => spotifyJsonToAlbum(albumRaw));
+        });
 };
 
 const spotifyJsonToArtist = (raw) => {
@@ -36,5 +47,18 @@ const spotifyJsonToArtist = (raw) => {
             const { limit=1 } = args;
             return fetchAlbumsOfArtist(artistId, limit);
         }
+    };
+};
+
+const spotifyJsonToAlbum = (albumRaw) => {
+    return {
+        // fills with raw data (by ES6 spread operator):
+        ...albumRaw,
+
+        // This needs extra logic: defaults to an empty string, if there is no image
+        // else: just takes URL of the first image
+        image: albumRaw.images[0] ? albumRaw.images[0].url : '',
+
+        tracks: [] // TODO implement fetching of tracks of album
     };
 };
