@@ -5,26 +5,32 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
 </head>
 <body>
-<h1><%= title %> (work-in-progress!)</h1>
+<h1><img src="http://graphql.org/img/logo.svg" height="80"/><%= title %> beta</h1>
 
-<h3>Try these predefined queries in graphiql playground:</h3>
+<h3>by Robert Hostlowsky <a href="https://twitter.com/rhosts"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @rhosts</a></h3>
 
-<p>Start a query for
+<h2>Try these predefined queries in graphiql playground:</h2>
+
+<p>Start a query for <br>
 <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
-for <b>artists</b> with a name containing <b>Red Hot Chili</b></a>
-in the graphiql playground.</p>
+<b>artists</b> with a name containing <b>Red Hot Chili</b></a>
 
-<p>Start a query for
+    <br>
+
     <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
-         artists and their albums and their tracks.</a> in the playground.</p>
+        <b>artists</b> with a name containing <b>Red Hot Chili</b>
+         and <b>their albums</b> and <b>its tracks</b>.</a>
+
+    <br/>
+    in the graphiql playground.</p>
 
 <p>Open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty graphiql</a> playground.</p>
 
-<p><i>Please do not mind, that there is a "natural" limit set by spotify, so the query results may be not "complete".</i></p>
+<p><i>Please do not mind, that there is a "natural" limit set by <i class="fa fa-spotify" aria-hidden="true"></i>Spotify, so the query results may be "incomplete".</i></p>
 
 <hr/>
 Find details in this <a href="https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server">blog post</a> and find the sources on
-<a href="https://github.com/lowsky/spotify-graphql-server">github</a>.
+<a href="https://github.com/lowsky/spotify-graphql-server">Github <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 <p> Version: <%= version %> </p>
 </body>
 </html>
