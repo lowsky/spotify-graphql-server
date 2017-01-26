@@ -20,7 +20,7 @@
     "ejs": "^2.5.5",
     "express": "^4.14.0",
     "express-graphql": "^0.6.1",
-    "graphql": "^0.8.2",
+    "graphql": "^0.9.1",
     "graphql-tools": "^0.9.0",
     "morgan": "~1.7.0",
     "node-fetch": "1.6.3",
