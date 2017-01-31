@@ -24,7 +24,7 @@
     "graphql-tools": "^0.9.0",
     "morgan": "~1.7.0",
     "node-fetch": "1.6.3",
-    "node-sass-middleware": "^0.10.0",
+    "node-sass-middleware": "^0.11.0",
     "serve-favicon": "~2.3.0"
   }
 }
