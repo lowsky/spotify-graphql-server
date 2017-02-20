@@ -25,6 +25,6 @@
     "morgan": "~1.8.0",
     "node-fetch": "2.0.0-alpha.3",
     "node-sass-middleware": "^0.11.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.4.0"
   }
 }
