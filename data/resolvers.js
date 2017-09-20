@@ -2,15 +2,16 @@ import fetch from 'node-fetch';
 
 
 const { SPOTIFY_TOKEN } = process.env;
+const headers = {
+    "Accept": "application/json",
+    "Authorization": "Bearer BQBg2HM1QmP0KXQN..."
+};
+
 
 headers.Authorization = "Bearer " + SPOTIFY_TOKEN;
 
 export const fetchArtistsByName = (name) => {
     console.log(`debug: query artist ${name} `);
-    const headers = {
-        "Accept": "application/json",
-        "Authorization": "Bearer BQBg2HM1QmP0KXQN..."
-    };
     return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
             headers
             })
