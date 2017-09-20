@@ -1,10 +1,12 @@
 /**
  * Module dependencies.
  */
-
-var app = require('./app');
 var debug = require('debug')('spot-graphql-server:server');
 var http = require('http');
+
+require('dotenv/config');
+
+var app = require('./app');
 
 /**
  * Get port from environment and store in Express.

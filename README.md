@@ -9,3 +9,5 @@ see [german blog post](https://blog.codecentric.de/2017/09/graphql-mit-spotify-t
 https://github.com/lowsky/spotify-graphql-server/issues/42 and [spotify announcement](http://developer.spotify.com/news-stories/2017/01/27/removing-unauthenticated-calls-to-the-web-api)
 
 Use the [Live Demo](https://spotify-graphql-server.herokuapp.com/) as a playground for graphql queries.
+
+For running this example locally, you need to adapt the [./.env.example] file (see there).
