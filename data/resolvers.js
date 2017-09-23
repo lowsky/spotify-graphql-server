@@ -1,24 +1,38 @@
 import fetch from 'node-fetch';
 
+function errorMsg (error) {
+    if (error) {
+        const { status = '', message = 'no details' } = error;
+        return `Error: ${status}: ${message}`;
+    }
+    return 'An unknown error!'
+}
+
+function throwExceptionOnError (data) {
+    if (data.error) {
+        throw new Error(errorMsg(data.error));
+    }
+}
+
 
 const { SPOTIFY_TOKEN } = process.env;
 const headers = {
     "Accept": "application/json",
-    "Authorization": "Bearer BQBg2HM1QmP0KXQN..."
+    "Authorization": "Bearer not set yet..."
 };
-
 
 headers.Authorization = "Bearer " + SPOTIFY_TOKEN;
 
 export const fetchArtistsByName = (name) => {
     console.log(`debug: query artist ${name} `);
     return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
-            headers
-            })
+        headers
+    })
         .then((response) => {
             return response.json();
         })
         .then((data) => {
+            throwExceptionOnError(data);
             return data.artists.items || [];
         })
         .then((data) => {
@@ -30,13 +44,14 @@ export const fetchAlbumsOfArtist = (artistId, limit) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
     return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
-    method: 'GET',
-    headers: headers
-})
+        method: 'GET',
+        headers: headers
+    })
         .then((response) => {
             return response.json();
         })
         .then((data) => {
+            throwExceptionOnError(data);
             return data.items || [];
         })
         .then((albumData) => {
