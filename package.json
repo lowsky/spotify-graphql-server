@@ -2,6 +2,11 @@
   "name": "spot-graphql-server",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "yarn": "1",
+    "npm": "5",
+    "node": "8"
+  },
   "scripts": {
     "test": "npm run simpletest",
     "simpletest": "babel-node ./test/schemaTest",
