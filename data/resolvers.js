@@ -48,48 +48,33 @@ const haveHeadersWithAuthToken = async () => {
     return await spotifyProxy()
 };
 
-module.exports.fetchArtistsByName = (name) => {
+
+module.exports.fetchArtistsByName = async (name) => {
     console.log(`debug: query artist ${name} `);
 
-    return haveHeadersWithAuthToken()
-        .then((headers) => {
-            return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
-                headers
-            })
-        })
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            throwExceptionOnError(data);
-            return data.artists.items || [];
-        })
-        .then((data) => {
-            return data.map(artistRaw => spotifyJsonToArtist(artistRaw));
-        });
+    const response = await fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
+        headers: await haveHeadersWithAuthToken()
+    });
+    const data = await response.json();
+    throwExceptionOnError(data);
+
+    return (data.artists.items || [])
+        .map(artistRaw => spotifyJsonToArtist(artistRaw));
 };
 
-const fetchAlbumsOfArtist = (artistId, limit) => {
+const fetchAlbumsOfArtist = async (artistId, limit) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
-    return haveHeadersWithAuthToken()
-        .then((headers) => {
-            return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
-                method: 'GET',
-                headers
-            })
-        })
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            throwExceptionOnError(data);
-            return data.items || [];
-        })
-        .then((albumData) => {
-            return albumData.map(albumRaw => spotifyJsonToAlbum(albumRaw));
-        });
+    const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
+        headers: await haveHeadersWithAuthToken()
+    });
+    const data = await response.json();
+    throwExceptionOnError(data);
+
+    return (data.items || [])
+        .map(albumRaw => spotifyJsonToAlbum(albumRaw));
 };
+
 module.exports.fetchAlbumsOfArtist = fetchAlbumsOfArtist;
 
 const spotifyJsonToArtist = (raw) => {
