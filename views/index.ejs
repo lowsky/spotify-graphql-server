@@ -5,26 +5,43 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
 </head>
 <body>
+<style>
+    .grey {
+        font-style: italic;
+        font-weight: lighter;
+        color: lightgrey;
+    }
+</style>
 <h1><img src="http://graphql.org/img/logo.svg" height="80"/><%= title %> beta</h1>
 
 <h3>by Robert Hostlowsky <a href="https://twitter.com/rhosts"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @rhosts</a></h3>
 
-<h2>Try these predefined queries in graphiql playground:</h2>
+<p style="border:solid black; padding: 1em"><b>Sorry, currently this playground does not work properly, because Spotify requires full authentication when
+    somebody requests any data of artists or albums. Details about
+        this on <a href="https://developer.spotify.com/news-stories/2017/01/27/removing-unauthenticated-calls-to-the-web-api/">Spotify developer news</a>
+        <br/><br/>
+        Follow <a href="https://github.com/lowsky/spotify-graphql-server/issues/42">issue #42 for updates</a></b></p>
+
+<div class="grey">
+
+<h2 class="grey">Try these predefined queries in graphiql playground:</h2>
 
 <p>Start a query for <br>
-<a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
-<b>artists</b> with a name containing <b>Red Hot Chili</b></a>
+    <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
+        <b>artists</b> with a name containing <b>Red Hot Chili</b></a>
 
     <br>
 
     <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
         <b>artists</b> with a name containing <b>Red Hot Chili</b>
-         and <b>their albums</b> and <b>its tracks</b>.</a>
+        and <b>their albums</b> and <b>its tracks</b>.</a>
 
     <br/>
     in the graphiql playground.</p>
 
 <p>Open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty graphiql</a> playground.</p>
+
+</div>
 
 <p><i>Please do not mind, that there is a "natural" limit set by <i class="fa fa-spotify" aria-hidden="true"></i>Spotify, so the query results may be "incomplete".</i></p>
 
