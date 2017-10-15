@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+const fetch = require ('node-fetch');
 
 function errorMsg (error) {
     if (error) {
@@ -17,13 +17,13 @@ function throwExceptionOnError (data) {
 
 const { SPOTIFY_TOKEN } = process.env;
 const headers = {
-    "Accept": "application/json",
-    "Authorization": "Bearer not set yet..."
+    'Accept': 'application/json',
+    'Authorization': ''
 };
 
 headers.Authorization = "Bearer " + SPOTIFY_TOKEN;
 
-export const fetchArtistsByName = (name) => {
+module.exports.fetchArtistsByName = (name) => {
     console.log(`debug: query artist ${name} `);
     return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
         headers
@@ -40,7 +40,7 @@ export const fetchArtistsByName = (name) => {
         });
 };
 
-export const fetchAlbumsOfArtist = (artistId, limit) => {
+const fetchAlbumsOfArtist = (artistId, limit) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
     return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
@@ -58,6 +58,7 @@ export const fetchAlbumsOfArtist = (artistId, limit) => {
             return albumData.map(albumRaw => spotifyJsonToAlbum(albumRaw));
         });
 };
+module.exports.fetchAlbumsOfArtist = fetchAlbumsOfArtist;
 
 const spotifyJsonToArtist = (raw) => {
     return {

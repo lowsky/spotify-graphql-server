@@ -1,6 +1,6 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
-import { printSchema } from 'graphql';
-import schema from '../data/schema';
+const { printSchema } = require('graphql');
+const schema = require('../data/schema');
 
 console.log(printSchema(schema));

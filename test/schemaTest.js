@@ -1,6 +1,6 @@
-import {mockServer, MockList} from 'graphql-tools';
+const mockServer = require('graphql-tools').mockServer;
 
-import schema from '../data/schema';
+const schema = require('../data/schema');
 
 let cnt = 0;
 
