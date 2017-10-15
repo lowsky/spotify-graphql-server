@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var expressGraphQL = require('express-graphql');
-var schema = require('./data/schema').default;
-import {fetchArtistsByName} from './data/resolvers'
+var schema = require('./data/schema');
+var { fetchArtistsByName } = require('./data/resolvers');
 
 var app = express();
 
