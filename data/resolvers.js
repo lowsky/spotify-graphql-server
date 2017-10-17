@@ -14,20 +14,49 @@ function throwExceptionOnError (data) {
     }
 }
 
-
-const { SPOTIFY_TOKEN } = process.env;
 const headers = {
     'Accept': 'application/json',
     'Authorization': ''
 };
 
-headers.Authorization = "Bearer " + SPOTIFY_TOKEN;
+const client_credentials = require('./client_credentials');
+
+let awaitingAuthorization;
+
+// const spotifyProxy = async ()  => {
+const spotifyProxy = () => {
+    if (awaitingAuthorization && !client_credentials.isExpired()) {
+        // use existing promise, if not expired
+        return awaitingAuthorization;
+    }
+    if (!awaitingAuthorization || client_credentials.isExpired()) {
+        awaitingAuthorization = new Promise((resolve, reject) => {
+            client_credentials.authenticate()
+                .then((token) => {
+                    headers.Authorization = 'Bearer ' + token.access_token;
+                    resolve(headers);
+                })
+                .catch((err) => {
+                    reject(err);
+                });
+        });
+    }
+    return awaitingAuthorization;
+};
+
+const haveHeadersWithAuthToken = async () => {
+    return await spotifyProxy()
+};
 
 module.exports.fetchArtistsByName = (name) => {
     console.log(`debug: query artist ${name} `);
-    return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
-        headers
-    })
+
+    return haveHeadersWithAuthToken()
+        .then((headers) => {
+            return fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
+                headers
+            })
+        })
         .then((response) => {
             return response.json();
         })
@@ -43,10 +72,13 @@ module.exports.fetchArtistsByName = (name) => {
 const fetchAlbumsOfArtist = (artistId, limit) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
-    return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
-        method: 'GET',
-        headers: headers
-    })
+    return haveHeadersWithAuthToken()
+        .then((headers) => {
+            return fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
+                method: 'GET',
+                headers
+            })
+        })
         .then((response) => {
             return response.json();
         })

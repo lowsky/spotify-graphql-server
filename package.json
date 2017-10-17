@@ -11,7 +11,8 @@
     "test": "npm run simpletest",
     "simpletest": "node ./test/schemaTest",
     "printSchema": "node ./bin/printSchema",
-    "start": "nodemon serverInit.js"
+    "watch": "nodemon serverInit.js",
+    "start": "node serverInit.js"
   },
   "dependencies": {
     "body-parser": "~1.18.1",
