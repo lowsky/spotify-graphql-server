@@ -33,3 +33,5 @@ Run `npm install`.
 ### print GraphQL schema idl
 
 `npm run printSchema`
+
+![Analytics](https://ga-beacon.appspot.com/UA-72383363-1/lowsky/spotify-graphql-server/README.md)
