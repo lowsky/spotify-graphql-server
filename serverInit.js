@@ -6,28 +6,21 @@ var http = require('http');
 
 require('dotenv/config');
 
-var app = require('./app');
+const app = require('./app');
 
 /**
  * Get port from environment and store in Express.
  */
-
-var port = process.env.PORT || '4000';
+const port = process.env.PORT || '4000';
 app.set('port', port);
-
-/**
- * Create HTTP server.
- */
-
-var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
  */
-
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+app.on('error', onError);
+app.listen(port, () => {
+  console.log(`listen on ${port}`);
+});
 
 /**
  * Event listener for HTTP server "error" event.
@@ -51,13 +44,4 @@ function onError(error) {
     default:
       throw error;
   }
-}
-
-/**
- * Event listener for HTTP server "listening" event.
- */
-
-function onListening() {
-  const { port } = server.address();
-  debug(`Listening on port $port`);
 }

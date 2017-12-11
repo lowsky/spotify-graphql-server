@@ -77,7 +77,7 @@ const fetchAlbumsOfArtist = async (artistId, limit) => {
 
 module.exports.fetchAlbumsOfArtist = fetchAlbumsOfArtist;
 
-const spotifyJsonToArtist = (raw) => {
+const spotifyJsonToArtist = async (raw) => {
     return {
         // fills with raw data (by ES6 spread operator):
         ...raw,

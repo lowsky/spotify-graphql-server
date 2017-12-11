@@ -1,17 +1,17 @@
-var express = require('express');
-var path = require('path');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
-var cors = require('cors');
+const express = require('express');
+const path = require('path');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-var routes = require('./routes/index');
+const routes = require('./routes/index');
 
-var expressGraphQL = require('express-graphql');
-var schema = require('./data/schema');
-var { fetchArtistsByName } = require('./data/resolvers');
+const expressGraphQL = require('express-graphql');
+const schema = require('./data/schema');
+const { fetchArtistsByName } = require('./data/resolvers');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -31,13 +31,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-// API middleware
 
 const rootValue = {
     queryArtists: ({ byName }) => fetchArtistsByName(byName)
 };
 
-app.use('/graphql', cors({origin:'*'}), expressGraphQL(req => ({
+// API middleware
+
+app.use('/graphql', cors(), expressGraphQL(req => ({
     schema,
     graphiql: true,
     rootValue,
@@ -46,9 +47,9 @@ app.use('/graphql', cors({origin:'*'}), expressGraphQL(req => ({
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
 
 // error handlers

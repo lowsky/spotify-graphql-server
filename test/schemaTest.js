@@ -1,5 +1,5 @@
 const mockServer = require('graphql-tools').mockServer;
-
+//addMockFunctionsToSchema
 const schema = require('../data/schema');
 
 let cnt = 0;
