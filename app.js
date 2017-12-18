@@ -33,6 +33,7 @@ app.use('/', routes);
 
 
 const rootValue = {
+    hi: () => 'Hello world!',
     queryArtists: ({ byName }) => fetchArtistsByName(byName)
 };
 
