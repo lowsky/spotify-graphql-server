@@ -12,7 +12,9 @@
     "simpletest": "node ./test/schemaTest",
     "printSchema": "node ./bin/printSchema",
     "watch": "nodemon serverInit.js",
-    "start": "node serverInit.js"
+    "start": "node serverInit.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "1.18.2",
@@ -27,9 +29,11 @@
     "graphql-tools": "2.24.0",
     "morgan": "1.9.0",
     "node-fetch": "2.1.2",
-    "node-sass-middleware": "0.11.0"
+    "node-sass-middleware": "0.11.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "nodemon": "1.17.5"
-  }
+  },
+  "snyk": true
 }
