@@ -21,7 +21,7 @@
     "debug": "3.1.0",
     "dotenv": "6.2.0",
     "ejs": "2.6.1",
-    "express": "4.16.3",
+    "express": "4.16.4",
     "express-graphql": "0.6.12",
     "graphql": "0.13.2",
     "graphql-tools": "2.24.0",
