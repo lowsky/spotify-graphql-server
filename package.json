@@ -24,7 +24,7 @@
     "express": "4.16.4",
     "express-graphql": "0.7.1",
     "graphql": "0.13.2",
-    "graphql-tools": "2.24.0",
+    "graphql-tools": "4.0.4",
     "morgan": "1.9.1",
     "node-fetch": "2.3.0",
     "node-sass-middleware": "0.11.0"
