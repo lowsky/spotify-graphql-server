@@ -22,7 +22,7 @@
     "dotenv": "7.0.0",
     "ejs": "2.6.1",
     "express": "4.16.4",
-    "express-graphql": "0.7.1",
+    "express-graphql": "0.8.0",
     "graphql": "14.2.1",
     "graphql-tools": "4.0.4",
     "morgan": "1.9.1",
