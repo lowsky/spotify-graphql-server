@@ -1,7 +1,5 @@
 # spotify-graphql-server
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lowsky/spotify-graphql-server.svg)](https://greenkeeper.io/)
-
 This demonstrates how to build a GraphQL server which fetches data from an external API (Spotify),
 see [german blog post](https://blog.codecentric.de/2017/09/graphql-mit-spotify-teil-1-server) or
  [english blog post](https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server)
@@ -13,10 +11,10 @@ Use the [Live Demo](https://spotify-graphql-server.herokuapp.com/) as a playgrou
 ### prerequisites
 
 For running this example locally, you must 
-register your own application at spotify and 
-adapt the [./.env.example] file.
+[register your own application at spotify](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app).
+Then create an [.env](./.env) file with the generated token, based on the example [.env.example](./.env.example) file.
 
-Install any `node.js` >= 8, with support for async/await.
+Have a modern `node.js` version ( >=8 ) installed.
 
 Run `npm install`. 
 
