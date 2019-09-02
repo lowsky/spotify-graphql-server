@@ -20,7 +20,7 @@
     "cors": "2.8.5",
     "debug": "4.1.1",
     "dotenv": "8.1.0",
-    "ejs": "2.6.2",
+    "ejs": "2.7.1",
     "express": "4.17.1",
     "express-graphql": "0.9.0",
     "graphql": "14.5.3",
