@@ -28,7 +28,7 @@
     "graphql": "14.6.0",
     "graphql-tools": "4.0.8",
     "morgan": "1.10.0",
-    "node-fetch": "2.6.2",
+    "node-fetch": "2.6.5",
     "node-sass-middleware": "0.11.0",
     "@snyk/protect": "latest"
   },
