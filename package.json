@@ -33,7 +33,7 @@
     "@snyk/protect": "1.744.0"
   },
   "devDependencies": {
-    "nodemon": "2.0.2"
+    "nodemon": "2.0.15"
   },
   "snyk": true
 }
