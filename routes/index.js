@@ -7,4 +7,4 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Spotify Graphql Server', version: packageJson.version });
 });
 
-module.exports = router;
+module.exports = router
