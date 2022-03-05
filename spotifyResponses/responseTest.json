@@ -1,0 +1,222 @@
+{
+  "playlists": {
+    "href": "https://api.spotify.com/v1/search?query=albatross&type=playlist&locale=en-US%2Cen%3Bq%3D0.9%2Cla%3Bq%3D0.8&offset=0&limit=5",
+    "items": [
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7zNGAO4BmZd9aoc1Nw30mD"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7zNGAO4BmZd9aoc1Nw30mD",
+        "id": "7zNGAO4BmZd9aoc1Nw30mD",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b27315039271f734c2e15fffa33eab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b27315039271f734c2e15fffa33eab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b27315039271f734c2e15fffa33eab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7",
+            "width": 60
+          }
+        ],
+        "name": "albatross nepal",
+        "owner": {
+          "display_name": "Arjunpjpt",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/i7m0kv81qo3soxyy6yl22h1yh"
+          },
+          "href": "https://api.spotify.com/v1/users/i7m0kv81qo3soxyy6yl22h1yh",
+          "id": "i7m0kv81qo3soxyy6yl22h1yh",
+          "type": "user",
+          "uri": "spotify:user:i7m0kv81qo3soxyy6yl22h1yh"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MjcsYjZmZDg5NDkzYjEyYWEyODRkZDM2N2EwMTcwNmVmNDMzMTQxOTMzYw==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7zNGAO4BmZd9aoc1Nw30mD/tracks",
+          "total": 26
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7zNGAO4BmZd9aoc1Nw30mD"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/4MRMbCTs7aDDztoPEGbgc8"
+        },
+        "href": "https://api.spotify.com/v1/playlists/4MRMbCTs7aDDztoPEGbgc8",
+        "id": "4MRMbCTs7aDDztoPEGbgc8",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2734676cbf99a56d53dc494abfb",
+            "width": 640
+          }
+        ],
+        "name": "I'm an albatross",
+        "owner": {
+          "display_name": "awsomeboy9",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/awsomeboy9"
+          },
+          "href": "https://api.spotify.com/v1/users/awsomeboy9",
+          "id": "awsomeboy9",
+          "type": "user",
+          "uri": "spotify:user:awsomeboy9"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "Myw3YzQ1N2ExMjc4YjI2MWFlMjllZWQzNmQ4YTIzYTlmMmE1ZjVmOWZm",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/4MRMbCTs7aDDztoPEGbgc8/tracks",
+          "total": 2
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:4MRMbCTs7aDDztoPEGbgc8"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/18ZeXRO58F7hJuKVu17RFB"
+        },
+        "href": "https://api.spotify.com/v1/playlists/18ZeXRO58F7hJuKVu17RFB",
+        "id": "18ZeXRO58F7hJuKVu17RFB",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2731c53ca0c8ff41f540a210551ab67616d0000b2738d87e256e7636641d2d38ecaab67616d0000b273d55149748dca0e5a1f40778eab67616d0000b273f66822e32a6f77adf31ccc1b",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2731c53ca0c8ff41f540a210551ab67616d0000b2738d87e256e7636641d2d38ecaab67616d0000b273d55149748dca0e5a1f40778eab67616d0000b273f66822e32a6f77adf31ccc1b",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2731c53ca0c8ff41f540a210551ab67616d0000b2738d87e256e7636641d2d38ecaab67616d0000b273d55149748dca0e5a1f40778eab67616d0000b273f66822e32a6f77adf31ccc1b",
+            "width": 60
+          }
+        ],
+        "name": "Fleetwood Mac — Albatross",
+        "owner": {
+          "display_name": "alanjevons53",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/alanjevons53"
+          },
+          "href": "https://api.spotify.com/v1/users/alanjevons53",
+          "id": "alanjevons53",
+          "type": "user",
+          "uri": "spotify:user:alanjevons53"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "NTgwLDY4MjQ0NmI0NDM2OGFkZjdlYmVjMzdjOWQ1MzI4M2Y0ZmEwZTQ4YTg=",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/18ZeXRO58F7hJuKVu17RFB/tracks",
+          "total": 413
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:18ZeXRO58F7hJuKVu17RFB"
+      },
+      {
+        "collaborative": false,
+        "description": "",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/3ZjoELl5aAKnVsgo0iFnec"
+        },
+        "href": "https://api.spotify.com/v1/playlists/3ZjoELl5aAKnVsgo0iFnec",
+        "id": "3ZjoELl5aAKnVsgo0iFnec",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://mosaic.scdn.co/640/ab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7ab67616d0000b273f456ce79ef38bb16fa5e9616",
+            "width": 640
+          },
+          {
+            "height": 300,
+            "url": "https://mosaic.scdn.co/300/ab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7ab67616d0000b273f456ce79ef38bb16fa5e9616",
+            "width": 300
+          },
+          {
+            "height": 60,
+            "url": "https://mosaic.scdn.co/60/ab67616d0000b2734082d8b7b9b6752fe3bac19fab67616d0000b273e1ce6eb15b326f0faba22207ab67616d0000b273eb90f7b36ce659a840d046f7ab67616d0000b273f456ce79ef38bb16fa5e9616",
+            "width": 60
+          }
+        ],
+        "name": "Albatross ",
+        "owner": {
+          "display_name": "Sujal poudel",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/6ffcdvaf6vxyjs02aadksrr5k"
+          },
+          "href": "https://api.spotify.com/v1/users/6ffcdvaf6vxyjs02aadksrr5k",
+          "id": "6ffcdvaf6vxyjs02aadksrr5k",
+          "type": "user",
+          "uri": "spotify:user:6ffcdvaf6vxyjs02aadksrr5k"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "MTYsOGNiMjNjN2E0YTkzMzRhNjJkZDc1ZTA0ZGFkMzI5N2Q0YjNlZTExZg==",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/3ZjoELl5aAKnVsgo0iFnec/tracks",
+          "total": 13
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:3ZjoELl5aAKnVsgo0iFnec"
+      },
+      {
+        "collaborative": false,
+        "description": "Nepali band &quot;maan nai chune&quot; ",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/playlist/7B9XtzJpksXhLbEcl0jHvZ"
+        },
+        "href": "https://api.spotify.com/v1/playlists/7B9XtzJpksXhLbEcl0jHvZ",
+        "id": "7B9XtzJpksXhLbEcl0jHvZ",
+        "images": [
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b2734082d8b7b9b6752fe3bac19f",
+            "width": 640
+          }
+        ],
+        "name": "Albatross ",
+        "owner": {
+          "display_name": "Jabu Punk",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/user/yflqu61an2eti07j80wlivc7x"
+          },
+          "href": "https://api.spotify.com/v1/users/yflqu61an2eti07j80wlivc7x",
+          "id": "yflqu61an2eti07j80wlivc7x",
+          "type": "user",
+          "uri": "spotify:user:yflqu61an2eti07j80wlivc7x"
+        },
+        "primary_color": null,
+        "public": null,
+        "snapshot_id": "OSxjNDc0MDc5ODc1MzU0ZDEzMTk5ZjMxZTgzZWUxMmJjMjkzZGM3MTc4",
+        "tracks": {
+          "href": "https://api.spotify.com/v1/playlists/7B9XtzJpksXhLbEcl0jHvZ/tracks",
+          "total": 7
+        },
+        "type": "playlist",
+        "uri": "spotify:playlist:7B9XtzJpksXhLbEcl0jHvZ"
+      }
+    ],
+    "limit": 5,
+    "next": "https://api.spotify.com/v1/search?query=albatross&type=playlist&locale=en-US%2Cen%3Bq%3D0.9%2Cla%3Bq%3D0.8&offset=5&limit=5",
+    "offset": 0,
+    "previous": null,
+    "total": 425
+  }
+}

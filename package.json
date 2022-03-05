@@ -17,6 +17,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
+    "@snyk/protect": "1.744.0",
     "body-parser": "1.19.1",
     "cookie-parser": "1.4.5",
     "cors": "2.8.5",
@@ -30,10 +31,11 @@
     "morgan": "1.10.0",
     "node-fetch": "2.6.6",
     "node-sass-middleware": "0.11.0",
-    "@snyk/protect": "1.744.0"
+    "npm-check-updates": "^12.5.2",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
-    "nodemon": "2.0.15"
+    "nodemon": "^2.0.15"
   },
   "snyk": true
 }
