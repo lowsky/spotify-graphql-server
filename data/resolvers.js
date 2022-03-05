@@ -83,6 +83,25 @@ module.exports.fetchPlaylistByName = async (name) => {
   );
 };
 
+module.exports.fetchPlaylistById = async (id) => {
+  console.log(`debug: query playlist ${id} `);
+
+  const response = await fetch(`https://api.spotify.com/v1/playlists/${id}`, {
+    headers: await haveHeadersWithAuthToken(),
+  });
+  const data = await response.json();
+  throwExceptionOnError(data);
+
+  data.tracks = data.tracks.items.map((trackRaw) =>
+    spotifyJsonToTrack({
+      ...trackRaw.track,
+      added_at: readableDate(trackRaw.added_at),
+    })
+  );
+
+  return spotifyJsonToPlaylistById(data);
+};
+
 const fetchAlbumsOfArtist = async (artistId, limit) => {
   console.log(`debug: query albums of artist ${artistId} `);
 
@@ -152,6 +171,29 @@ const spotifyJsonToArtist = async (raw) => {
       const artistId = raw.id;
       const { limit = 1 } = args;
       return fetchAlbumsOfArtist(artistId, limit);
+    },
+  };
+};
+
+const spotifyJsonToPlaylistById = async (raw) => {
+  return {
+    // fills with raw data (by ES6 spread operator):
+    ...raw,
+
+    // This needs extra logic: defaults to an empty string, if there is no image
+    // else: just takes URL of the first image
+    image: raw.images[0] ? raw.images[0].url : '',
+
+    spotify_url: raw.external_urls.spotify,
+    owner_name: raw.owner ? raw.owner.display_name : '',
+
+    // .. needs to fetch the playlist's tracks:
+    tracks: (args, object) => {
+      // this is similar to fetchArtistsByName()
+      // returns a Promise which gets resolved asynchronously !
+      const playlistId = raw.id;
+      const { limit = 1 } = args;
+      return fetchTracksOfPlaylist(playlistId, limit);
     },
   };
 };

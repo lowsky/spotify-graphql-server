@@ -4,12 +4,14 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const { URLSearchParams } = require('url');
+global.URLSearchParams = URLSearchParams;
 
 const routes = require('./routes/index');
 
-const expressGraphQL = require('express-graphql');
+const expressGraphQL = require('express-graphql').graphqlHTTP;
 const schema = require('./data/schema');
-const { fetchArtistsByName } = require('./data/resolvers');
+const { fetchArtistsByName, fetchPlaylistByName, fetchPlaylistById } = require('./data/resolvers');
 
 const app = express();
 
@@ -21,36 +23,43 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('node-sass-middleware')({
-  src: path.join(__dirname, 'public'),
-  dest: path.join(__dirname, 'public'),
-  indentedSyntax: true,
-  sourceMap: true
-}));
+app.use(
+  require('node-sass-middleware')({
+    src: path.join(__dirname, 'public'),
+    dest: path.join(__dirname, 'public'),
+    indentedSyntax: true,
+    sourceMap: true,
+  })
+);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-
 const rootValue = {
-    hi: () => 'Hello world!',
-    queryArtists: ({ byName }) => fetchArtistsByName(byName)
+  hi: () => 'Hello world!',
+  queryArtists: ({ byName }) => fetchArtistsByName(byName),
+  queryPlaylists: ({ byPlaylistName }) => fetchPlaylistByName(byPlaylistName),
+  queryIndividualPlaylist: ({ byPlaylistId }) => fetchPlaylistById(byPlaylistId),
 };
 
 // API middleware
 
-app.use('/graphql', cors(), expressGraphQL(req => ({
+app.use(
+  '/graphql',
+  cors(),
+  expressGraphQL((req) => ({
     schema,
     graphiql: true,
     rootValue,
     pretty: process.env.NODE_ENV !== 'production',
-})));
+  }))
+);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-    const err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+app.use(function (req, res, next) {
+  const err = new Error('Not Found');
+  err.status = 404;
+  next(err);
 });
 
 // error handlers
@@ -58,24 +67,23 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+  app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
-      error: err
+      error: err,
     });
   });
 }
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
-    error: {}
+    error: {},
   });
 });
-
 
 module.exports = app;
