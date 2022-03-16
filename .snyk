@@ -1,0 +1,35 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - node-sass-middleware > node-sass > request > extend:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > node-gyp > request > extend:
+        patched: '2021-10-06T19:24:56.427Z'
+  'npm:hoek:20180212':
+    - node-sass-middleware > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > request > hawk > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > request > hawk > boom > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > request > hawk > sntp > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2021-10-06T19:24:56.427Z'
+  'npm:stringstream:20180511':
+    - node-sass-middleware > node-sass > request > stringstream:
+        patched: '2021-10-06T19:24:56.427Z'
+    - node-sass-middleware > node-sass > node-gyp > request > stringstream:
+        patched: '2021-10-06T19:24:56.427Z'
+  'npm:tunnel-agent:20170305':
+    - node-sass-middleware > node-sass > request > tunnel-agent:
+        patched: '2021-10-06T19:24:56.427Z'

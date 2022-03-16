@@ -12,24 +12,28 @@
     "simpletest": "node ./test/schemaTest",
     "printSchema": "node ./bin/printSchema",
     "watch": "nodemon serverInit.js",
-    "start": "node serverInit.js"
+    "start": "node serverInit.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "body-parser": "1.19.0",
+    "body-parser": "1.19.1",
     "cookie-parser": "1.4.5",
     "cors": "2.8.5",
     "debug": "4.3.2",
-    "dotenv": "8.2.0",
+    "dotenv": "8.6.0",
     "ejs": "3.1.6",
     "express": "4.17.1",
-    "express-graphql": "0.9.0",
+    "express-graphql": "0.12.0",
     "graphql": "14.7.0",
     "graphql-tools": "4.0.8",
     "morgan": "1.10.0",
-    "node-fetch": "2.6.2",
-    "node-sass-middleware": "0.11.0"
+    "node-fetch": "2.6.6",
+    "node-sass-middleware": "1.0.0",
+    "@snyk/protect": "1.744.0"
   },
   "devDependencies": {
-    "nodemon": "2.0.2"
-  }
+    "nodemon": "2.0.15"
+  },
+  "snyk": true
 }
