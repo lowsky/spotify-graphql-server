@@ -30,7 +30,7 @@
     "morgan": "1.10.0",
     "node-fetch": "2.6.6",
     "node-sass-middleware": "1.0.0",
-    "@snyk/protect": "1.744.0"
+    "@snyk/protect": "1.878.0"
   },
   "devDependencies": {
     "nodemon": "2.0.15"
