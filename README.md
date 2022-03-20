@@ -11,25 +11,23 @@ Use the [Live Demo](https://spotify-graphql-server.herokuapp.com/) as a playgrou
 ### prerequisites
 
 For running this example locally, you must 
-[register your own application at spotify](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app).
+[register your own application at spotify](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/).
 Then create an [.env](./.env) file with the generated token, based on the example [.env.example](./.env.example) file.
 
-Have a modern `node.js` version ( >=8 ) installed.
+Have a modern `node.js` version ( >=14 ) installed.
 
-Run `npm install`. 
+Run `yarn install`. 
 
 ### run server
 
-`npm start` to start the graphql server, then open http://localhost:4000/
+`yarn start` to start the graphql server, then open http://localhost:4000/
 
-`npm run watch` to start the graphql server which automatically restarts when any sources were changed (driven by `nodemon`)
+`yarn watch` to start the graphql server which automatically restarts when any sources were changed (driven by `nodemon`)
 
 ### run tests
 
-`npm test`
+`yarn test`
 
 ### print GraphQL schema idl
 
-`npm run printSchema`
-
-![Analytics](https://ga-beacon.appspot.com/UA-72383363-1/lowsky/spotify-graphql-server/README.md)
+`yarn run printSchema`
