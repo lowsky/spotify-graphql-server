@@ -22,7 +22,7 @@
     "cookie-parser": "1.4.6",
     "cors": "2.8.5",
     "debug": "4.3.4",
-    "dotenv": "8.6.0",
+    "dotenv": "16.0.0",
     "ejs": "3.1.6",
     "express": "4.17.3",
     "express-graphql": "0.12.0",
