@@ -7,7 +7,7 @@ const cors = require('cors');
 
 const routes = require('./routes/index');
 
-const expressGraphQL = require('express-graphql');
+const { graphqlHTTP } = require('express-graphql');
 const schema = require('./data/schema');
 const { fetchArtistsByName } = require('./data/resolvers');
 
@@ -39,7 +39,7 @@ const rootValue = {
 
 // API middleware
 
-app.use('/graphql', cors(), expressGraphQL(req => ({
+app.use('/graphql', cors(), graphqlHTTP(req => ({
     schema,
     graphiql: true,
     rootValue,
