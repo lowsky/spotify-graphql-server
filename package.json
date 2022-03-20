@@ -17,20 +17,20 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "body-parser": "1.19.1",
+    "@snyk/protect": "1.878.0",
+    "body-parser": "1.19.2",
     "cookie-parser": "1.4.6",
     "cors": "2.8.5",
-    "debug": "4.3.2",
+    "debug": "4.3.4",
     "dotenv": "8.6.0",
     "ejs": "3.1.6",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "express-graphql": "0.12.0",
     "graphql": "14.6.0",
     "graphql-tools": "4.0.8",
     "morgan": "1.10.0",
     "node-fetch": "2.6.7",
-    "node-sass-middleware": "1.0.1",
-    "@snyk/protect": "1.878.0"
+    "node-sass-middleware": "1.0.1"
   },
   "devDependencies": {
     "nodemon": "2.0.15"
