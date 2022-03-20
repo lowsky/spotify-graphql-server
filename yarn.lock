@@ -1741,10 +1741,10 @@ node-gyp@^8.4.1:
     tar "^6.1.2"
     which "^2.0.2"
 
-node-sass-middleware@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/node-sass-middleware/-/node-sass-middleware-1.0.0.tgz#ce97779677d2498b57af48911c71d6e63564d507"
-  integrity sha512-thFhEw6rchWfvyMpmxdD64riBHb9SFs1xiubz4Ukis1zTqrCL7xCKhiuX1SZYAwOlLQcAZGmmpOtjHGGZ9S5uQ==
+node-sass-middleware@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/node-sass-middleware/-/node-sass-middleware-1.0.1.tgz#cec1ff830cfdd703edeeeac67f0226a22971b771"
+  integrity sha512-zkm02Hv9uxduYnWn+iZACw8rMs5OvvKbhACv0q61JQNefhETHznNWN5uiwdiYdb58zsIYcdJ4szbc6UeAOXodQ==
   dependencies:
     node-sass "^7.0.1"
 
