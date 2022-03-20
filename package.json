@@ -17,6 +17,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
+    "@graphql-tools/mock": "8.6.1",
     "@snyk/protect": "1.878.0",
     "body-parser": "1.19.2",
     "cookie-parser": "1.4.6",
@@ -26,8 +27,7 @@
     "ejs": "3.1.6",
     "express": "4.17.3",
     "express-graphql": "0.12.0",
-    "graphql": "14.6.0",
-    "graphql-tools": "4.0.8",
+    "graphql": "16.3.0",
     "morgan": "1.10.0",
     "node-fetch": "2.6.7",
     "node-sass-middleware": "1.0.1"
