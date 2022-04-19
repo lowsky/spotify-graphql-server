@@ -9,10 +9,11 @@
   },
   "scripts": {
     "test": "npm run simpletest",
+    "build": "sass public/stylesheets/style.sass:public/stylesheets/style.css",
     "simpletest": "node ./test/schemaTest",
     "printSchema": "node ./bin/printSchema",
-    "watch": "nodemon serverInit.js",
-    "start": "node serverInit.js",
+    "watch": "npm run build ; nodemon serverInit.js",
+    "start": "npm run build ; node serverInit.js",
     "prepare": "yarn run snyk-protect",
     "snyk-protect": "snyk-protect"
   },
@@ -29,8 +30,8 @@
     "express-graphql": "0.12.0",
     "graphql": "16.3.0",
     "morgan": "1.10.0",
-    "node-fetch": "3.2.3",
-    "node-sass-middleware": "1.0.1"
+    "node-fetch": "2.6.7",
+    "sass": "1.50.1"
   },
   "devDependencies": {
     "nodemon": "2.0.15"
