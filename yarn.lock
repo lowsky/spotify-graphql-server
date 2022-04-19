@@ -84,10 +84,10 @@
   resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-0.14.0.tgz"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@snyk/protect@1.900.0":
-  version "1.900.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.900.0.tgz#8326e163459e223f4601ec0815a94f577520c5b1"
-  integrity sha512-eeGZJu3ucvTrUTszrWXzT+yIsFqoOo4ywv4JRmJgdKkOQ3Udmy3moY1k9Sfnf86p+cGBy5WBUjDM8+9I8L0IpQ==
+"@snyk/protect@1.908.0":
+  version "1.908.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.908.0.tgz#ddfaca59db5675d4b01b35e3e127db56399e8a2a"
+  integrity sha512-dmaiims0zw2v8xwCDH8f4TprIof8Y5B02dH9/s8RGxfmuVAuT940ty7sIz0FElFkm5HmaXy0Q4mNxulhpkkcwg==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
