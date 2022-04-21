@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %></title>
+    <title>Spotify Graphql Server</title>
     <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <style>
+        .grey {
+            font-style: italic;
+            font-weight: lighter;
+            color: lightgrey;
+        }
+    </style>
 </head>
 <body>
-<style>
-    .grey {
-        font-style: italic;
-        font-weight: lighter;
-        color: lightgrey;
-    }
-</style>
-<h1><img src="http://graphql.org/img/logo.svg" height="80" alt="GraphQL logo"/><%= title %> beta</h1>
+<h1><img src="https://graphql.org/img/logo.svg" height="80" alt="GraphQL-logo"/>Spotify Graphql Server</h1>
 
-<h3>by Robert Hostlowsky <a href="https://twitter.com/rhosts"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @rhosts</a></h3>
+<h3>by <a href="https://twitter.com/rhosts"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i> @rhosts</a></h3>
 
-
-<h2 class="">Try these predefined queries in graphiql playground:</h2>
+<h2>Try these predefined queries in GraphiQL playground:</h2>
 
 <p>Start a query for <br>
     <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
         <b>artists</b> with a name containing <b>Red Hot Chili</b></a>
-
     <br>
-
     <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
         <b>artists</b> with a name containing <b>Red Hot Chili</b>
         and <b>their albums</b> and <b>its tracks</b>.</a>
-    <div style="border:solid; padding: 1em" class="grey"><b>
-        Loading Tracks is currently not implemented. Follow <a href="https://github.com/lowsky/spotify-graphql-server/issues/3">issue #3 for updates</a></b>
-        <br/>
-    </div>
-
     <br>
 
-    in the graphiql playground.</p>
+    in the GraphiQL playground.</p>
 
-<p>Or open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty graphiql</a> playground.</p>
+<div style="border:solid; padding: 1em" class="grey"><b>
+    Loading Tracks is currently not implemented. Follow <a href="https://github.com/lowsky/spotify-graphql-server/issues/3">issue #3 for updates</a></b>
+    </div>
+
+<p>Or open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty GraphiQL</a> playground.</p>
 
 <p><i>Please do not mind, that there is a "natural" limit set by <i class="fa fa-spotify" aria-hidden="true"></i>Spotify, so the query results may be "incomplete".</i></p>
 
 <hr/>
 
-Find details in the <a href="https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server">English </a> or
+Find (old) details in the <a href="https://blog.codecentric.de/en/2017/01/lets-build-spotify-graphql-server">English </a> or
 <a href="https://blog.codecentric.de/2017/09/graphql-mit-spotify-teil-1-server">German blog post</a> and find the sources on
-<a href="https://github.com/lowsky/spotify-graphql-server">Github <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+<a href="https://github.com/lowsky/spotify-graphql-server">GitHub <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 </body>
 </html>
