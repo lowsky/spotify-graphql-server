@@ -18,7 +18,7 @@ app.set('port', port);
  */
 app.on('error', onError);
 app.listen(port, () => {
-  console.log(`listen on ${port}`);
+  console.log(`listen on http://localhost:${port}`);
 });
 
 /**
