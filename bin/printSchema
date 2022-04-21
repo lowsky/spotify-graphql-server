@@ -1,6 +1,0 @@
-#!/usr/bin/env node
-
-const { printSchema } = require('graphql');
-const schema = require('../data/schema');
-
-console.log(printSchema(schema));

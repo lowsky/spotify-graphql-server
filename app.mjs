@@ -1,27 +1,28 @@
-const express = require('express');
-const path = require('path');
-const logger = require('morgan');
-const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const cors = require('cors');
+import express from "express";
+import path from "path";
+import logger from "morgan";
+import cookieParser from "cookie-parser";
+import bodyParser from "body-parser";
+import cors from "cors";
 
-const routes = require('./routes/index');
+import routes from "./routes/index.mjs";
 
-const { graphqlHTTP } = require('express-graphql');
-const schema = require('./data/schema');
-const { fetchArtistsByName } = require('./data/resolvers');
+import { graphqlHTTP } from "express-graphql";
+
+import {schema} from "./data/schema.mjs";
+import { fetchArtistsByName } from "./data/resolvers.mjs";
 
 const app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join('.', 'views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join('.', 'public')));
 
 app.use('/', routes);
 
@@ -72,4 +73,4 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+export default app;

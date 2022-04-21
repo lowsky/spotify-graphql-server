@@ -2,6 +2,7 @@
   "name": "spot-graphql-server",
   "version": "0.3.0",
   "private": true,
+  "type": "module",
   "engines": {
     "yarn": "1",
     "npm": "8",
@@ -10,10 +11,10 @@
   "scripts": {
     "test": "npm run simpletest",
     "build": "sass public/stylesheets/style.sass:public/stylesheets/style.css",
-    "simpletest": "node ./test/schemaTest",
-    "printSchema": "node ./bin/printSchema",
-    "watch": "npm run build ; nodemon serverInit.js",
-    "start": "npm run build ; node serverInit.js",
+    "simpletest": "node ./test/schemaTest.mjs",
+    "printSchema": "node ./bin/printSchema.mjs",
+    "watch": "npm run build ; nodemon serverInit.mjs",
+    "start": "npm run build ; node serverInit.mjs",
     "prepare": "yarn run snyk-protect",
     "snyk-protect": "snyk-protect"
   },

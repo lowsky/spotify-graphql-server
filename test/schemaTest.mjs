@@ -1,6 +1,6 @@
-const mockServer = require('@graphql-tools/mock').mockServer;
-//addMockFunctionsToSchema
-const schema = require('../data/schema');
+import { mockServer } from "@graphql-tools/mock";
+
+import { schema } from "../data/schema.mjs";
 
 let cnt = 0;
 

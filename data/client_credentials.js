@@ -9,10 +9,12 @@
  * return `false`
  */
 
-const fetch = require('node-fetch');
+import fetch from "node-fetch";
 
+import { config } from "dotenv";
+
+config();
 // load secrets from .env file and store in process.env
-require('dotenv').config();
 
 const {
     CLIENT_ID = 'invalid',
@@ -28,7 +30,7 @@ const authOptions = {
 //
 let expireTime = 0;
 
-module.exports = {
+export default {
     isExpired: () => {
         if(expireTime) {
             return Date.now() > expireTime;

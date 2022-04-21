@@ -1,4 +1,6 @@
-const fetch = require ('node-fetch');
+import fetch from "node-fetch";
+
+import client_credentials from "./client_credentials.js";
 
 function errorMsg (error) {
     if (error) {
@@ -18,9 +20,6 @@ const headers = {
     'Accept': 'application/json',
     'Authorization': ''
 };
-
-const client_credentials = require('./client_credentials');
-
 let awaitingAuthorization;
 
 // const spotifyProxy = async ()  => {
@@ -49,7 +48,7 @@ const haveHeadersWithAuthToken = async () => {
 };
 
 
-module.exports.fetchArtistsByName = async (name) => {
+export const fetchArtistsByName = async (name) => {
     console.log(`debug: query artist ${name} `);
 
     const response = await fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
@@ -62,7 +61,7 @@ module.exports.fetchArtistsByName = async (name) => {
         .map(artistRaw => spotifyJsonToArtist(artistRaw));
 };
 
-const fetchAlbumsOfArtist = async (artistId, limit) => {
+export const fetchAlbumsOfArtist = async (artistId) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
     const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
@@ -75,8 +74,6 @@ const fetchAlbumsOfArtist = async (artistId, limit) => {
         .map(albumRaw => spotifyJsonToAlbum(albumRaw));
 };
 
-module.exports.fetchAlbumsOfArtist = fetchAlbumsOfArtist;
-
 const spotifyJsonToArtist = async (raw) => {
     return {
         // fills with raw data (by ES6 spread operator):
@@ -87,7 +84,7 @@ const spotifyJsonToArtist = async (raw) => {
         image: raw.images[0] ? raw.images[0].url : '',
 
         // .. needs to fetch the artist's albums:
-        albums: (args, object) => {
+        albums: (args) => {
             // this is similar to fetchArtistsByName()
             // returns a Promise which gets resolved asynchronously !
             const artistId = raw.id;

@@ -1,13 +1,12 @@
 /**
  * Module dependencies.
  */
-var debug = require('debug')('spot-graphql-server:server');
-var http = require('http');
+import dotenv from "dotenv/config";
+import debug0 from "debug";
 
-require('dotenv/config');
+const debug = debug0('spot-graphql-server:server');
 
-const app = require('./app');
-
+import app from "./app.mjs";
 /**
  * Get port from environment and store in Express.
  */
