@@ -5,8 +5,6 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-import routes from "./routes/index.mjs";
-
 import { graphqlHTTP } from "express-graphql";
 
 import {schema} from "./data/schema.mjs";
@@ -14,18 +12,11 @@ import { fetchArtistsByName } from "./data/resolvers.mjs";
 
 const app = express();
 
-// view engine setup
-app.set('views', path.join('.', 'views'));
-app.set('view engine', 'ejs');
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join('.', 'public')));
-
-app.use('/', routes);
-
 
 const rootValue = {
     hi: () => 'Hello world!',
@@ -53,24 +44,27 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+  app.use(function (err, req, res, next) {
+    console.log(err)
     res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
+    res.send(`Sorry, there was this error: ` + `
+      <h1>${err.message}</h1>
+      <h2>${err.status}</h2>
+      <pre>${err.stack}</pre>
+  `);
+
   });
 }
 
 // production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+// no stack-traces leaked to user
+app.use(function (err, req, res, next) {
   res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
+  res.send(`Sorry, there was this error: ` + `
+  <h1>${err.message}</h1>
+  <h2>${err.status}</h2>
+  <pre>${err.stack}</pre>
+  `);
 });
-
 
 export default app;
