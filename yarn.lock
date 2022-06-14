@@ -42,10 +42,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@snyk/protect@1.947.0":
-  version "1.947.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.947.0.tgz#0ec719d820d923f78f9699c014dd2a4bae6090b3"
-  integrity sha512-F/8yrTbrxNfLbPNbNXuFrrMeaC3+uTzOqNQTnvgh8ctB/CVlkYJfDpZpEReb9VVl3KK5RDdgUDv/Bzz0pbansA==
+"@snyk/protect@1.950.0":
+  version "1.950.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.950.0.tgz#4a6dc91d799e2f31f1bcd74817217872141ef73a"
+  integrity sha512-L86qM75L2Sci9hOlt6Twz1JLEKQVqSTmoGc+Bu8CT8enJ8vFQdiQHMmaiTuJDWAV1XhAh4FaVDGkKw4qQhDYEg==
 
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
