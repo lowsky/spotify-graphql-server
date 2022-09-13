@@ -19,19 +19,19 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@graphql-tools/mock": "8.7.3",
+    "@graphql-tools/mock": "8.7.6",
     "@snyk/protect": "1.988.0",
     "body-parser": "1.20.0",
     "cookie-parser": "1.4.6",
     "cors": "2.8.5",
     "debug": "4.3.4",
-    "dotenv": "16.0.1",
+    "dotenv": "16.0.2",
     "express": "4.18.1",
     "express-graphql": "0.12.0",
-    "graphql": "16.5.0",
+    "graphql": "16.6.0",
     "morgan": "1.10.0",
     "node-fetch": "3.2.10",
-    "sass": "1.54.4"
+    "sass": "1.54.9"
   },
   "devDependencies": {
     "nodemon": "2.0.19"
