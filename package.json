@@ -6,7 +6,7 @@
   "engines": {
     "yarn": "1",
     "npm": "8",
-    "node": "16"
+    "node": ">=16.x"
   },
   "scripts": {
     "test": "npm run simpletest",
