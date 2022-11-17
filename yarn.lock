@@ -37,10 +37,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@snyk/protect@1.1058.0":
-  version "1.1058.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1058.0.tgz#a236e79662d3ec34e410f163706bbbc938b78cb6"
-  integrity sha512-8AIRMlaoAY1yEk7+4RDV957Pszt/UEVhr2qdC7PTFa1mELb9/fNwqJ2KTBMhBKarSFEZrM5ZWPe91ogHIT49+Q==
+"@snyk/protect@1.1060.0":
+  version "1.1060.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1060.0.tgz#09d1012162f8370419e4de23d187b0fb18b265a0"
+  integrity sha512-s3MPuxinUSmxk8mIFSzNLlicvGe3/cj3bguRYO2EWN1GBB6bOJ86+OX4bcIecyqoo4J17mUwxYj/s+v+oy+7Hw==
 
 abbrev@1:
   version "1.1.1"
