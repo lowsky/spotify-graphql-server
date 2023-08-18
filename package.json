@@ -31,7 +31,7 @@
     "graphql": "16.7.1",
     "morgan": "1.10.0",
     "node-fetch": "3.3.1",
-    "sass": "1.63.6"
+    "sass": "1.66.1"
   },
   "devDependencies": {
     "nodemon": "3.0.1"
