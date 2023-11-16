@@ -43,10 +43,10 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.1.tgz#076d78ce99822258cf813ecc1e7fa460fa74d052"
   integrity sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==
 
-"@snyk/protect@1.1207.0":
-  version "1.1207.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1207.0.tgz#1fa34a07987100b43faf94e04aaaaf528b14a437"
-  integrity sha512-ghRa5S8aH8z9I3WGbl4/ISqkNUOmiNLG1XWkN7SyCsd1UZmY0WZDiKMLU1ZQrPQQdrCPyC+jwpRkKwDdfFLVqw==
+"@snyk/protect@1.1248.0":
+  version "1.1248.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1248.0.tgz#84e9ce92691bc3d73d117e420791e111034b3892"
+  integrity sha512-t1dBU/2eliumDPjsjzJPpdpkCL+FpV+4Nz5Qes8aJqv/QwRPlS9F51hNm4EQjuahUM01eC35m7oNuBglp/Yp7Q==
 
 abbrev@1:
   version "1.1.1"
