@@ -10,10 +10,10 @@
     "@graphql-tools/utils" "^10.0.13"
     tslib "^2.4.0"
 
-"@graphql-tools/mock@9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-9.0.3.tgz#1f88c7c36d100e19ca59b9c12b81998ffe045c6a"
-  integrity sha512-wwVS7+q6R40CsagG1Iw7tY5RVCKDJrDV/39KeE1Ut6BwVJJ5GpJodWNKrso4LiI1/jCt3/yrlAcA/0IHdeJAPg==
+"@graphql-tools/mock@9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-9.0.4.tgz#6eb52a3f63646ea359ece60916b67c2cbc4fb9d4"
+  integrity sha512-/pfrBoL6QkKBrJcaOZ/2FtfoAYmiQE+L6Up3hWbSWjg1XJfecjqptLTcM2Wf0dmHAFkjCK1k4QVNHMmGJ94IOA==
   dependencies:
     "@graphql-tools/schema" "^10.0.4"
     "@graphql-tools/utils" "^10.2.1"
