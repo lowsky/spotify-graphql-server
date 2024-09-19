@@ -604,10 +604,10 @@ node-fetch@3.3.2:
     fetch-blob "^3.1.4"
     formdata-polyfill "^4.0.10"
 
-nodemon@3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-3.1.4.tgz#c34dcd8eb46a05723ccde60cbdd25addcc8725e4"
-  integrity sha512-wjPBbFhtpJwmIeY2yP7QF+UKzPfltVGtfce1g/bB15/8vCGZj8uxD62b/b9M9/WVgme0NZudpownKN+c0plXlQ==
+nodemon@3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-3.1.6.tgz#15bd79dca6849aa27b2689d1dbe02dc28bcc1a1c"
+  integrity sha512-C8ymJbXpTTinxjWuMfMxw0rZhTn/r7ypSGldQyqPEgDEaVwAthqC0aodsMwontnAInN9TuPwRLeBoyhmfv+iSA==
   dependencies:
     chokidar "^3.5.2"
     debug "^4"
