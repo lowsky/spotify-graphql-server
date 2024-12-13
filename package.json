@@ -34,7 +34,7 @@
     "sass": "1.82.0"
   },
   "devDependencies": {
-    "nodemon": "3.1.7"
+    "nodemon": "3.1.9"
   },
   "snyk": true
 }
