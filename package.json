@@ -5,7 +5,7 @@
   "type": "module",
   "engines": {
     "yarn": "1",
-    "npm": "10",
+    "npm": "11",
     "node": ">=16.x"
   },
   "scripts": {
