@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@graphql-tools/mock": "9.0.15",
-    "@snyk/protect": "1.1295.2",
+    "@snyk/protect": "1.1295.4",
     "body-parser": "1.20.3",
     "cookie-parser": "1.4.7",
     "cors": "2.8.5",
