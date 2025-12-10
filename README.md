@@ -1,4 +1,6 @@
 # spotify-graphql-server
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flowsky%2Fspotify-graphql-server.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flowsky%2Fspotify-graphql-server?ref=badge_shield)
+
 
 This demonstrates how to build a GraphQL server which fetches data from an external API (Spotify),
 see [german blog post](https://blog.codecentric.de/2017/09/graphql-mit-spotify-teil-1-server) or
@@ -31,3 +33,7 @@ Run `yarn install`.
 ### print GraphQL schema idl
 
 `yarn run printSchema`
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flowsky%2Fspotify-graphql-server.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flowsky%2Fspotify-graphql-server?ref=badge_large)
