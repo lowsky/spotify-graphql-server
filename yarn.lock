@@ -133,10 +133,10 @@
     "@parcel/watcher-win32-ia32" "2.5.0"
     "@parcel/watcher-win32-x64" "2.5.0"
 
-"@snyk/protect@1.1301.1":
-  version "1.1301.1"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1301.1.tgz#eee7711763023677045ec93cba24f47f15c84723"
-  integrity sha512-H+z2G7U3KyO41V2TuzAW53qjOco1FWp1o0r4FC1k7ogcRUxh4/UOO2/qKOVMCyBnJDCbPSlxBuMpBkuw88m1FA==
+"@snyk/protect@1.1301.2":
+  version "1.1301.2"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1301.2.tgz#f424129383fb3e01d2356f9ba6dd6bd93a1b2f5f"
+  integrity sha512-ZI/ITKxOwVSiwUMdmyH1PDPfWisia/Yl7WjYYTKHxqngCKyhsv1Juofszlk910JuYIVTh3bZKtd6xbACKBqBCA==
 
 "@whatwg-node/promise-helpers@^1.0.0":
   version "1.2.2"
