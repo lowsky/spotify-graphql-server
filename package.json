@@ -23,7 +23,7 @@
     "@snyk/protect": "1.1301.2",
     "body-parser": "2.2.2",
     "cookie-parser": "1.4.7",
-    "cors": "2.8.5",
+    "cors": "2.8.6",
     "debug": "4.4.3",
     "dotenv": "17.2.3",
     "express": "5.2.1",
