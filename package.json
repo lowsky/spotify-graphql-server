@@ -4,16 +4,15 @@
   "private": true,
   "type": "module",
   "engines": {
-    "yarn": "1",
     "npm": "11",
-    "node": ">=16.x"
+    "node": ">=22.x"
   },
   "scripts": {
     "test": "npm run simpletest",
     "build": "sass public/stylesheets/style.sass:public/stylesheets/style.css",
     "simpletest": "node ./test/schemaTest.mjs",
     "printSchema": "node ./bin/printSchema.mjs",
-    "watch": "npm run build ; nodemon serverInit.mjs",
+    "watch": "npm run build ; node --watch serverInit.mjs",
     "start": "npm run build ; node serverInit.mjs",
     "prepare": "yarn run snyk-protect",
     "snyk-protect": "snyk-protect"
@@ -33,8 +32,6 @@
     "node-fetch": "3.3.2",
     "sass": "1.99.0"
   },
-  "devDependencies": {
-    "nodemon": "3.1.14"
-  },
-  "snyk": true
+  "snyk": true,
+  "packageManager": "yarn@4.13.0"
 }
