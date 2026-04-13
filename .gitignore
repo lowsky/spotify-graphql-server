@@ -9,6 +9,10 @@ node_modules
 # Optional npm cache directory
 .npm
 
+# ide
+.vscode
+.idea
+
 # yarn status file
 .yarn/install-state.gz
 
