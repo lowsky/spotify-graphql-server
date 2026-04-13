@@ -9,9 +9,8 @@ node_modules
 # Optional npm cache directory
 .npm
 
+# yarn status file
+.yarn/install-state.gz
+
 # Optional REPL history
 .node_repl_history
-
-# generated from sass
-public/stylesheets/style.css.map
-public/stylesheets/style.css
