@@ -5,29 +5,33 @@ import { schema } from "../data/schema.mjs";
 let cnt = 0;
 
 const simpleMockServer = mockServer(schema, {
-    String: () => 'loremipsum ' + (cnt++),
-    Album: () => {
-        return {
-            name: () => {return 'Album#1'}
-        };
-    }
+    String: () => `name ${cnt++}`,
+    Query: () => ({
+        queryArtists: (args) =>
+            ([{
+                name: `Famous Artist: ${args.byName}`
+            }]),
+    }),
+    Album: () => ({
+        name: 'An album with a boring title'
+    })
 });
 
 const result = simpleMockServer.query(`{
-    queryArtists(byName:"Marilyn Manson") {
+    queryArtists(byName: "Queen") {
         name
         albums {
             name
             tracks {
                 name
-                artists { name }
             }
         }
     }
 }`);
 
-result.then(data => {
-    console.log('data: ', JSON.stringify(data, '  ', 1));
-}).catch(error => {
+try {
+    console.log('GraphQL result:');
+    console.log(JSON.stringify(await result, '  ', 1));
+} catch (error) {
     console.log('error: ', error);
-});
+}
