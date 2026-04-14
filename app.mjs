@@ -5,12 +5,13 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-import { graphqlHTTP } from "express-graphql";
-
 import {schema} from "./data/schema.mjs";
 import { fetchArtistsByName } from "./data/resolvers.mjs";
 
 const app = express();
+
+
+import { createHandler } from 'graphql-http/lib/use/express';
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -23,14 +24,7 @@ const rootValue = {
     queryArtists: ({ byName }) => fetchArtistsByName(byName)
 };
 
-// API middleware
-
-app.use('/graphql', cors(), graphqlHTTP(req => ({
-    schema,
-    graphiql: true,
-    rootValue,
-    pretty: process.env.NODE_ENV !== 'production',
-})));
+app.post('/graphql', createHandler({ schema, rootValue }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
