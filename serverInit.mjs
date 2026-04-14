@@ -1,7 +1,6 @@
 /**
  * Module dependencies.
  */
-import dotenv from "dotenv/config";
 import debug0 from "debug";
 
 const debug = debug0('spot-graphql-server:server');

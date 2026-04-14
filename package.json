@@ -11,8 +11,8 @@
     "test": "npm run simpletest",
     "simpletest": "node ./test/schemaTest.mjs",
     "printSchema": "node ./bin/printSchema.mjs",
-    "watch": "node --watch serverInit.mjs",
-    "start": "node serverInit.mjs",
+    "watch": "node --watch --env-file=.env serverInit.mjs",
+    "start": "node --env-file=.env serverInit.mjs",
     "prepare": "yarn run snyk-protect",
     "snyk-protect": "snyk-protect"
   },
@@ -23,7 +23,6 @@
     "cookie-parser": "1.4.7",
     "cors": "2.8.6",
     "debug": "4.4.3",
-    "dotenv": "17.4.2",
     "express": "5.2.1",
     "graphql": "16.13.2",
     "graphql-http": "1.22.4",

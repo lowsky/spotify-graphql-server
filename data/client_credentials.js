@@ -11,11 +11,6 @@
 
 import fetch from "node-fetch";
 
-import { config } from "dotenv";
-
-config();
-// load secrets from .env file and store in process.env
-
 const {
     CLIENT_ID = 'invalid',
     CLIENT_SECRET = 'invalid'
