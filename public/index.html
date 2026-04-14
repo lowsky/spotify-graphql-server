@@ -20,17 +20,17 @@
 <h2>Try these predefined queries in GraphiQL playground:</h2>
 
 <p>Start a query for <br>
-    <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
+    <a href='graphql.html?query=%7B%0A%20%20queryArtists(byName%3A%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%7D%0A%7D%0A'>
         <b>artists</b> with a name containing <b>Red Hot Chili</b></a>
     <br>
-    <a href='./graphql?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
+    <a href='graphql.html?query=%7B%0A%20%20queryArtists(byName%3A%20%22Red%20Hot%20Chili%20Peppers%22)%20%7B%0A%20%20%20%20name%0A%20%20%20%20id%0A%20%20%20%20image%0A%20%20%20%20albums%20%7B%0A%20%20%20%20%20%20name%0A%20%20%20%20%20%20id%0A%20%20%20%20%20%20image%20%0A%20%20%20%20%20%20tracks%20%7B%0A%20%20%20%20%20%20%20%20id%0A%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20preview_url%0A%20%20%20%20%20%20%20%20artists%20%7B%0A%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A'>
         <b>artists</b> with a name containing <b>Red Hot Chili</b>
         and <b>their albums</b> and <b>its tracks</b>.</a>
     <br>
 
     in the GraphiQL playground.</p>
 
-<p>Or open an <a href='./graphql?query=query%20%7B%0A%20%20%0A%7D'>empty GraphiQL</a> playground.</p>
+<p>Or open an <a href='graphql.html?query=query%20%7B%0A%20%20%0A%7D'>empty GraphiQL</a> playground.</p>
 
 <div style="border:solid; padding: 1em" class="grey"><b>
     Loading Tracks is currently not implemented. Follow <a href="https://github.com/lowsky/spotify-graphql-server/issues/3">issue #3 for updates</a></b>
