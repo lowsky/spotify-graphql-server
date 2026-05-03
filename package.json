@@ -17,7 +17,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@graphql-tools/mock": "9.1.6",
+    "@graphql-tools/mock": "9.1.7",
     "@snyk/protect": "1.1304.0",
     "body-parser": "2.2.2",
     "cookie-parser": "1.4.7",
