@@ -67,12 +67,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@snyk/protect@npm:1.1304.0":
-  version: 1.1304.0
-  resolution: "@snyk/protect@npm:1.1304.0"
+"@snyk/protect@npm:1.1304.3":
+  version: 1.1304.3
+  resolution: "@snyk/protect@npm:1.1304.3"
   bin:
     snyk-protect: bin/snyk-protect
-  checksum: 10c0/df39b58c3c88475c752584f1651b88439b8b4c4a8207b7d2b19a604bb86bed3b988088d85beeceb2976e363f7e22caff90f43bb19f1cfa78582e5476f2cec6e8
+  checksum: 10c0/33b1628a4c4de3ebbb802b7a29d59557b101d4d65eb1e34dec0a9eb82fa0c6a9eb3d293506175ad19f8303f61f0a067f2e8a00f098223f5085e402a59239080d
   languageName: node
   linkType: hard
 
@@ -883,7 +883,7 @@ __metadata:
   resolution: "spot-graphql-server@workspace:."
   dependencies:
     "@graphql-tools/mock": "npm:9.1.6"
-    "@snyk/protect": "npm:1.1304.0"
+    "@snyk/protect": "npm:1.1304.3"
     body-parser: "npm:2.2.2"
     cookie-parser: "npm:1.4.7"
     cors: "npm:2.8.6"
