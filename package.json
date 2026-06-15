@@ -30,5 +30,5 @@
     "node-fetch": "3.3.2"
   },
   "snyk": true,
-  "packageManager": "yarn@4.15.0"
+  "packageManager": "yarn@4.17.0"
 }
