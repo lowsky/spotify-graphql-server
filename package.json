@@ -24,7 +24,7 @@
     "cors": "2.8.6",
     "debug": "4.4.3",
     "express": "5.2.1",
-    "graphql": "17.0.1",
+    "graphql": "17.0.2",
     "graphql-http": "1.22.4",
     "morgan": "1.11.0",
     "node-fetch": "3.3.2"
