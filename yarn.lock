@@ -5,48 +5,48 @@ __metadata:
   version: 10
   cacheKey: 10c0
 
-"@graphql-tools/merge@npm:^9.1.10":
-  version: 9.1.10
-  resolution: "@graphql-tools/merge@npm:9.1.10"
+"@graphql-tools/merge@npm:^9.2.2":
+  version: 9.2.2
+  resolution: "@graphql-tools/merge@npm:9.2.2"
   dependencies:
-    "@graphql-tools/utils": "npm:^11.1.1"
+    "@graphql-tools/utils": "npm:^11.2.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/3844e3d83480216f74e461f20756016031d64e5ee020b78bc44dedc731eacaf373d872df9e3bf5bfeb456e0d610b4b2d66a888100a37ec3e60ece98e890fe031
+  checksum: 10c0/9f4e78b0c61a1bf045fca3c0854c8241e552f62922e8efeedcaaeca22aeaca2408ee7c0936837126ba894b1852dd7c107a68a74d475a497e2966e1130d40ed86
   languageName: node
   linkType: hard
 
-"@graphql-tools/mock@npm:9.1.8":
-  version: 9.1.8
-  resolution: "@graphql-tools/mock@npm:9.1.8"
+"@graphql-tools/mock@npm:9.1.12":
+  version: 9.1.12
+  resolution: "@graphql-tools/mock@npm:9.1.12"
   dependencies:
-    "@graphql-tools/schema": "npm:^10.0.34"
-    "@graphql-tools/utils": "npm:^11.1.1"
+    "@graphql-tools/schema": "npm:^10.0.38"
+    "@graphql-tools/utils": "npm:^11.2.2"
     fast-json-stable-stringify: "npm:^2.1.0"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/15fe4209a0d77af51b0b56a0754d47d7e19f735d46800ed1501b6d7f76b92166c98cd827c975bb7d4ba79f1d8d1c5276df18cfd2d18453a0bc94f2fddb805a69
+  checksum: 10c0/27aa2ac287973f656f8c1412de4521f755f6e73cd8ec25b23bf54a6ffec9e8152c40f7581f5dd3b664fc342703eb7e2823f5da0e9c247f78b4c3d3a54de3f88d
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:^10.0.34":
-  version: 10.0.34
-  resolution: "@graphql-tools/schema@npm:10.0.34"
+"@graphql-tools/schema@npm:^10.0.38":
+  version: 10.0.38
+  resolution: "@graphql-tools/schema@npm:10.0.38"
   dependencies:
-    "@graphql-tools/merge": "npm:^9.1.10"
-    "@graphql-tools/utils": "npm:^11.1.1"
+    "@graphql-tools/merge": "npm:^9.2.2"
+    "@graphql-tools/utils": "npm:^11.2.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/ae8a44de0ac29d0e66416f7e7d9e8fb0756fbd7fec1ab6e078ae725301120fcf07c07bdb7478db16ccb1eed2ddb5c4905d507c2f41724e7a2804a8ccd3a9b0c6
+  checksum: 10c0/cfce1f7df4a8c52d9e3c24a8e85f2329a46e8e1ba0170447cd23bd5bb8707ca9aa35c080234e2a373a376ddec05f0356b7a31e31de4712c3f668ab3aca89af93
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:^11.1.1":
-  version: 11.1.1
-  resolution: "@graphql-tools/utils@npm:11.1.1"
+"@graphql-tools/utils@npm:^11.2.2":
+  version: 11.2.2
+  resolution: "@graphql-tools/utils@npm:11.2.2"
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.1.1"
     "@whatwg-node/promise-helpers": "npm:^1.0.0"
@@ -54,7 +54,7 @@ __metadata:
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/5a617173cf9786e07f90fc38596e3f921744aafd0ecab9584bde18ada654c9024f547a66d71f44a58ca58532538c1bb3ae5877f4579db80dfc2a2500cd81645a
+  checksum: 10c0/049389bd14c9c18e99d1443552baeda187c2759635b179b2eb74f008c8ab80637730b2427267dd2a39b7051138cff8f5fd5bc1416d516bf4c7dc3ea50501daf6
   languageName: node
   linkType: hard
 
@@ -67,12 +67,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@snyk/protect@npm:1.1305.2":
-  version: 1.1305.2
-  resolution: "@snyk/protect@npm:1.1305.2"
+"@snyk/protect@npm:1.1306.1":
+  version: 1.1306.1
+  resolution: "@snyk/protect@npm:1.1306.1"
   bin:
     snyk-protect: bin/snyk-protect
-  checksum: 10c0/8708222ae2762e68f76da34741e9d46bad600eb07293d52482ac0994ba2a9aea55bfc5612bfed6590db43436adec2db41123136b5dd71f2bc5c98081801db1db
+  checksum: 10c0/d9c149a84d5a0e9a29c95c618630b53312b231a72668ba8b6cba2d4bbb7a1ef9fc3bc468bffbe12b17b778c567710e150ab1b04c2696fb2715c0f3f192e41d65
   languageName: node
   linkType: hard
 
@@ -889,8 +889,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "spot-graphql-server@workspace:."
   dependencies:
-    "@graphql-tools/mock": "npm:9.1.8"
-    "@snyk/protect": "npm:1.1305.2"
+    "@graphql-tools/mock": "npm:9.1.12"
+    "@snyk/protect": "npm:1.1306.1"
     body-parser: "npm:2.3.0"
     cookie-parser: "npm:1.4.7"
     cors: "npm:2.8.6"
