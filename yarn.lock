@@ -479,12 +479,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-http@npm:1.23.0":
-  version: 1.23.0
-  resolution: "graphql-http@npm:1.23.0"
+"graphql-http@npm:1.23.1":
+  version: 1.23.1
+  resolution: "graphql-http@npm:1.23.1"
   peerDependencies:
     graphql: ">=0.11 <=17"
-  checksum: 10c0/3ff9c49a554ff929f5b2473dd7220af24157e8f05648d3c0b45c1ae0990169ad21da457ddc379214602d2d4f2fc5b747ec7a1cac76e16b077770d203ad3bf477
+  checksum: 10c0/32c058096bc2ef477233fa0d0a419a7a7c6e6479eb86151048b56d4beb7c688a0bec70bf47f017ad1772a23bfa1aca31d32405c9bc9983aa097b2304feb8f0e9
   languageName: node
   linkType: hard
 
@@ -897,7 +897,7 @@ __metadata:
     debug: "npm:4.4.3"
     express: "npm:5.2.1"
     graphql: "npm:17.0.2"
-    graphql-http: "npm:1.23.0"
+    graphql-http: "npm:1.23.1"
     morgan: "npm:1.12.0"
     node-fetch: "npm:3.3.2"
   languageName: unknown
