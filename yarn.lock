@@ -5,56 +5,56 @@ __metadata:
   version: 10
   cacheKey: 10c0
 
-"@graphql-tools/merge@npm:^10.0.8":
-  version: 10.0.8
-  resolution: "@graphql-tools/merge@npm:10.0.8"
+"@graphql-tools/merge@npm:^10.0.10":
+  version: 10.0.10
+  resolution: "@graphql-tools/merge@npm:10.0.10"
   dependencies:
-    "@graphql-tools/utils": "npm:^13.2.1"
+    "@graphql-tools/utils": "npm:^13.2.3"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10c0/b17fe8b176fa122b324cc144cc2fc95afec9a377779c5eceef252820d266fcb27b4ea8017c82e8fa948e6e8fee67814c0e7176d1ad77282e54724350936608f5
+  checksum: 10c0/6e4921d6b9e2e688ed6ac4cfc7ee568a45726458fd5e86e5b360c5c3c2b4c9da983b7bf7363554f809cf09f2cd4da527722a6f95368c6988d15ab5336a636970
   languageName: node
   linkType: hard
 
-"@graphql-tools/mock@npm:10.1.3":
-  version: 10.1.3
-  resolution: "@graphql-tools/mock@npm:10.1.3"
+"@graphql-tools/mock@npm:10.1.5":
+  version: 10.1.5
+  resolution: "@graphql-tools/mock@npm:10.1.5"
   dependencies:
-    "@graphql-tools/schema": "npm:^11.0.8"
-    "@graphql-tools/utils": "npm:^13.2.1"
-    "@whatwg-node/promise-helpers": "npm:^2.0.1"
+    "@graphql-tools/schema": "npm:^11.0.10"
+    "@graphql-tools/utils": "npm:^13.2.3"
+    "@whatwg-node/promise-helpers": "npm:^2.0.2"
     fast-json-stable-stringify: "npm:^2.1.0"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10c0/30885482fd64dcbe1ec15b0fb734db205728cb9d02962d85f278ed55e8fd9eb0c2b2cce5355888b9392343671f46600fee484507bd93c80509433522584d8d7e
+  checksum: 10c0/dfd90d6d547229affec38ae5b1c03f4618387de566cb499acdc54e4eaa9fd19046e33cfa63762aefe7313d8942bd2eea754a9d82110b4904fa86b15ab1268dfc
   languageName: node
   linkType: hard
 
-"@graphql-tools/schema@npm:^11.0.8":
-  version: 11.0.8
-  resolution: "@graphql-tools/schema@npm:11.0.8"
+"@graphql-tools/schema@npm:^11.0.10":
+  version: 11.0.10
+  resolution: "@graphql-tools/schema@npm:11.0.10"
   dependencies:
-    "@graphql-tools/merge": "npm:^10.0.8"
-    "@graphql-tools/utils": "npm:^13.2.1"
+    "@graphql-tools/merge": "npm:^10.0.10"
+    "@graphql-tools/utils": "npm:^13.2.3"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10c0/3c03bdcced77d636c56eb088ced1e265c6587a4805ed34519f4dccf5ad9b8fb3f39dd7ce33b6a13c8d24fd1bde94907b2b2e0604300b8ee25acc7f727536d9f9
+  checksum: 10c0/6184a5f9ae964df7ee4dcabdfcf4504690761ebfeffa3c6aa7cf20980276e5323eb2b70f431184afd745345ee554cab33ddebc1b01ece697fed01a9712adf071
   languageName: node
   linkType: hard
 
-"@graphql-tools/utils@npm:^13.2.1":
-  version: 13.2.1
-  resolution: "@graphql-tools/utils@npm:13.2.1"
+"@graphql-tools/utils@npm:^13.2.3":
+  version: 13.2.3
+  resolution: "@graphql-tools/utils@npm:13.2.3"
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@whatwg-node/promise-helpers": "npm:^2.0.1"
+    "@whatwg-node/promise-helpers": "npm:^2.0.2"
     tslib: "npm:^2.4.0"
   peerDependencies:
     graphql: ^16.0.0 || ^17.0.0
-  checksum: 10c0/c51e342e1bb20ed2cd1eec6fd579a853c25d5018b17b29c12756913232878a0db956975b1d8c7e58cac3a16b727bbb21bfa3183702c45af83f2c42eabcb4a7eb
+  checksum: 10c0/49245e09ca0de735daf017b3ac66abe420c86ea0d8686ddf660aa8901a93a0f989622b0a2d34a4a3cf256f6e5aa76ba7b0d064c89bf101af051b047b5d070d23
   languageName: node
   linkType: hard
 
@@ -76,12 +76,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@whatwg-node/promise-helpers@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@whatwg-node/promise-helpers@npm:2.0.1"
+"@whatwg-node/promise-helpers@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@whatwg-node/promise-helpers@npm:2.0.2"
   dependencies:
-    tslib: "npm:^2.6.3"
-  checksum: 10c0/7a7db7a7d4d6d662d470bd0f4e2dc048cd4b440b696bd19ee5f8019fa2008af19f971fc16b9c7a95a95aa239941142c85d81d2f223c4c1a74a318b4722f6e854
+    tslib: "npm:^2.9.1"
+  checksum: 10c0/023090586cb9cfa42bb96606c232c2f6e485352936e71b6c9f5881fb6ca7e0ee9325a1a20c82d4d30ea2afc39fecb1444974313790fe8961658e7437f5fbfe2d
   languageName: node
   linkType: hard
 
@@ -914,7 +914,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "spot-graphql-server@workspace:."
   dependencies:
-    "@graphql-tools/mock": "npm:10.1.3"
+    "@graphql-tools/mock": "npm:10.1.5"
     "@snyk/protect": "npm:1.1309.0"
     body-parser: "npm:2.4.0"
     cookie-parser: "npm:1.4.7"
@@ -956,10 +956,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.6.3":
-  version: 2.8.1
-  resolution: "tslib@npm:2.8.1"
-  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
+"tslib@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "tslib@npm:2.9.1"
+  checksum: 10c0/8ff46e7a4d19fa62c23483c89cf5ccc3906e742ef6e6d60bd3826b686143b300b4f6f04161cc1cf31a6b11fe70e1058ae4d4e4a108b5c68326d469684736a83c
   languageName: node
   linkType: hard
 
